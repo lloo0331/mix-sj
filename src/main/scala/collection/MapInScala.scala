@@ -18,7 +18,7 @@ object MapInScala {
 
     PlUtils.pri(countWords("See Spot run! Run,Spot. Run!"),"countWords(\"See Spot run! Run,Spot. Run!\")")
 
-    val nums = Map("i"->1,"ii"->2) // 集合类如果没有显示指定,默认都是不可变类,该map引用自PreDef.下面针对nums的操作,返回的都是新的set,没有对nums做修改
+    val nums = Map("i"->1,"ii"->2) // 集合类如果没有显示指定,默认都是不可变类,该map引用自PreDef.下面针对nums的操作,返回的都是新的set,没有对nums做修改,没有带=号的操作都是返回新的集合
 
     PlUtils.pri(nums,"nums")
 
@@ -44,7 +44,7 @@ object MapInScala {
 
     PlUtils.pri(nums.isEmpty,"nums.isEmpty")
 
-    val words = mutable.Map.empty[String,Int] //  创建一个可变的map words,下面的操作都是直接修改words这个map
+    val words = mutable.Map.empty[String,Int] //  创建一个可变的map words,下面的操作都是直接修改words这个map,这些操作也都有在最后加上=号
 
     words += ("one"->1)
 
@@ -62,6 +62,9 @@ object MapInScala {
 
     PlUtils.pri(words,"words --= List(\"one\",\"two\")")
 
+    words("four")=4
+
+    println(words)
   }
 
   /**

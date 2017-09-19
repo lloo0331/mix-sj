@@ -8,7 +8,7 @@ object SetInScala{
   def main(args: Array[String]): Unit = {
 
 
-    val nums = Set(1, 2, 3); // 集合类如果没有显示指定,默认都是不可变类,该set引用自PreDef.下面针对nums的操作,返回的都是新的set,没有对nums做修改
+    val nums = Set(1, 2, 3); // 集合类如果没有显示指定,默认都是不可变类,该set引用自PreDef.下面针对nums的操作,返回的都是新的set,没有对nums做修改,没有带=号的操作都是返回新的集合
 
     PlUtils.pri("nums", nums)
 
@@ -26,7 +26,7 @@ object SetInScala{
 
     PlUtils.pri(nums.contains(3), "nums.contains(3)") //  set是否包含元素 3
 
-    val words = mutable.Set.empty[String] //  创建一个可变的set words,下面的操作都是直接修改words这个set
+    val words = mutable.Set.empty[String] //  创建一个可变的set words,下面的操作都是直接修改words这个set,这些操作也都有在最后加上=号
 
     words += "the"
 

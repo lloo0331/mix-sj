@@ -12,6 +12,10 @@ object PlUtils {
   def pri(any:Any,field:String): Unit ={
     println(field+"   ====>   "+any)
   }
+  def pri(any:String,field:String): Unit ={
+    println(field+"   ====>   "+any)
+  }
+
 
   def pri(field:String): Unit ={
     println(field)
