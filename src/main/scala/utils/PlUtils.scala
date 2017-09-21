@@ -3,7 +3,7 @@ package utils
 //打印辅助类
 object PlUtils {
 
-  var print = true;
+  var canPrint = true;
 
   def pri(field:String,any:Any): Unit ={
     println(field+"   ====>   "+any)
