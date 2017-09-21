@@ -1,5 +1,6 @@
 package po
 
+//Point实体类,自己写get,set方法.
 class PointInScala(xc:Int, xy:Int) {
 
   private var mx = xc
@@ -16,12 +17,12 @@ class PointInScala(xc:Int, xy:Int) {
   def x = mx //getX()
   def y = my //getY()
 
-  def x_=(cx:Int){//scala的约定,调用point.x就是调用x_方法 setX(int cx)
+  def x_=(cx:Int){//scala的约定,调用point.x就是调用x_方法,x_方法相当于java里的setX(int cx)
     this.mx = cx
     println("执行point.x调用了该方法")
   }
 
-  def y_=(cy:Int){//setY(int cy)
+  def y_=(cy:Int){//scala的约定,调用point.y就是调用y_方法,y_方法相当于java里的setY(int cy)
     this.my = cy
     println("执行point.y调用了该方法")
   }

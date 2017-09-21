@@ -5,6 +5,7 @@ import scala.collection.mutable
 import scala.collection.mutable.{HashMap, Map, SynchronizedMap}
 object MapMaker {
 
+  //创建一个同步hashmap,并且在取不到数据的时候返回Why do you want to know?
   def makeMap:Map[String,String] ={
 
     new HashMap[String,String] with SynchronizedMap[String,String]{

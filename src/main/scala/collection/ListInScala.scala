@@ -73,7 +73,9 @@ object ListInScala {
 
     abcde addString(buf,"(",";",")");
 
+    val func1 = List.tabulate(6)(n => n*n)
 
+    PlUtils.pri(func1,"List.tabulate(6)(n => n*n)")
 
 
   }

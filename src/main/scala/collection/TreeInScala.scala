@@ -5,6 +5,9 @@ import utils.PlUtils
 import scala.collection.immutable.TreeMap
 import scala.collection.immutable.TreeSet
 
+/**
+  * 有序容器
+  */
 object TreeInScala {
 
   def main(args: Array[String]): Unit = {

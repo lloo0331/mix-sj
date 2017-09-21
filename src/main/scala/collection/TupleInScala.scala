@@ -2,6 +2,9 @@ package collection
 
 import utils.PlUtils
 
+/**
+  * 元组一般用于方法(函数),使其支持返回多个参数.可以理解为返回一个Object数组
+  */
 object TupleInScala {
 
   def main(args: Array[String]): Unit = {
@@ -26,10 +29,13 @@ object TupleInScala {
 
     println(idx1)
 
-
-
   }
 
+  /**
+    * 取得数值中的最大值及其索引
+    * @param words
+    * @return
+    */
   def longestWord(words:Array[String]) ={
     var word = words(0)
     var idx = 0
