@@ -27,14 +27,7 @@ object RationalClass{
 
     PlUtils.pri(r1+r3)
 
-    Demo
-
-    PlUtils.pri(Demo.x)
-
   }
 
 }
 
-object Demo{
-  val x = {println("initializing x");"done"}
-}
