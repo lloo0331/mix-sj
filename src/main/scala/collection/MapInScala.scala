@@ -65,6 +65,12 @@ object MapInScala {
     words("four")=4
 
     println(words)
+
+
+//    val capital = Map("US"->"Washington")
+//    capital+=("Japan"->"Tokyo")
+
+
   }
 
   /**
