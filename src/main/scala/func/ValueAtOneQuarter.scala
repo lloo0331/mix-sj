@@ -4,6 +4,7 @@ import utils.PlUtils
 
 import scala.math._
 
+//带函数参数的函数
 object ValueAtOneQuarter {
 
   //valueAtOneQuarter(f: (Double)=>Double) 表示valueAtOneQuarter接收一个返回值为Double的函数.=>指代函数
@@ -18,9 +19,9 @@ object ValueAtOneQuarter {
 
     val q1 = valueAtOneQuarter1(1.5)
 
-    PlUtils.pri(q1(ceil _))
+    PlUtils.pri(q1(ceil _)/2)
 
-    PlUtils.pri(q1(sqrt _))
+    PlUtils.pri(q1(sqrt _)/2)
 
     PlUtils.pri(ceil(1.5))
 
@@ -28,10 +29,16 @@ object ValueAtOneQuarter {
 
     PlUtils.pri(sqrt(4))
 
+    PlUtils.pri(valueAtOneQuarter((x:Double)=>3*x))
+
+    PlUtils.pri(valueAtOneQuarter((x) => 3*x))
+
+    PlUtils.pri(valueAtOneQuarter(x => 3*x))
+
   }
 
   //对valueAtOneQuarter进行修改,可以自由传入数值,再传入函数,组装结果
-  def valueAtOneQuarter1(factor:Double) = (x:(Double)=>Double) => x(factor)/2
+  def valueAtOneQuarter1(factor:Double) = (x:(Double)=>Double) => x(factor)
 
 
 
