@@ -31,7 +31,7 @@ object ValueAtOneQuarter {
   }
 
   //对valueAtOneQuarter进行修改,可以自由传入数值,再传入函数,组装结果
-  def valueAtOneQuarter1(factor:Double) = (x:(Double)=>Double) => x(factor)
+  def valueAtOneQuarter1(factor:Double) = (x:(Double)=>Double) => x(factor)/2
 
 
 
