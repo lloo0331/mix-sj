@@ -2,7 +2,7 @@ package quickscala.chapter2
 
 import utils.PlUtils
 
-object Example4 {
+object Example6 {
 
   def main(args: Array[String]): Unit = {
 
@@ -14,7 +14,7 @@ object Example4 {
 //      println(i)
 //    }
 
-    PlUtils.pri(countPrint("Hello"))
+    PlUtils.pri(countPrint("Hello5"))
 
 
   }
