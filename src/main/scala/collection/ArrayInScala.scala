@@ -121,17 +121,29 @@ object ArrayInScala{
     val f = ArrayBuffer(1,7,2,9)
 
 //    val fSorted = f.sorted(_<_)
-
+//
 //    val bDescending = f.sorted(_ > _)
 
     val g = Array(1,7,2,9)
 
+    PlUtils.pri(scala.util.Sorting.quickSort(g),"scala.util.Sorting.quickSort(Array(1,7,2,9))")
+
+
+    // 多维数组
+
+    val matrix = Array.ofDim[Double](3,4)
+
+    matrix(0)(1) = 42
+
+    PlUtils.pri(matrix(0)(1))
+
+    val triangle = new Array[Array[Int]](10)
+
+    for(i<- 0 until triangle.length)
+      triangle(i) = new Array[Int](i+1)
+
 
 
   }
-
-
-
-
 
 }
