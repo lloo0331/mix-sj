@@ -21,9 +21,12 @@ object PlUtils {
     println(field)
   }
 
+  def priArr[B](array: Array[B]): Unit ={
+    println(array.mkString("[",",","]"))
+  }
+
   def pri(any:Any): Unit ={
     println(any)
   }
-
 
 }
