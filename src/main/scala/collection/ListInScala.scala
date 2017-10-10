@@ -150,6 +150,54 @@ object ListInScala {
 
     PlUtils.pri(reduce3)
 
+    val scan1 = (1 to 10).scanLeft(0)(_ + _)
+
+    val scan2 = (0 /: (1 to 10))(_ + _)//foltLeft
+
+    PlUtils.pri(scan1)
+
+    val scan3 = (1 to 10).scanRight(0)(_ + _)
+
+    PlUtils.pri(scan3)
+
+    val scan4 = (1 to 10).scanLeft(0)(_ - _)
+
+    PlUtils.pri(scan4)
+
+    val pr = List(10,20,30)
+
+    val index = for(i<-0 to pr.length)yield i
+
+    val z = pr.zip(index)
+
+    PlUtils.pri(z)//构造一个新的List,List中的每个元素包含值和索引
+
+    PlUtils.pri(pr.zipWithIndex)//构造一个新的List,List中的每个元素包含值和索引,这个为scala提供的api
+
+
+    val aa = (Map[Int,Int]() /: pr.zipWithIndex){
+      (m,c) =>
+        m + (c._2->c._1)
+    }
+
+    PlUtils.pri(aa)
+
+    val price = List(5.0,20.0,9.95)
+
+    val quantities = List(10,2,1)
+
+    val zip1 = price zip quantities
+
+    PlUtils.pri(zip1)
+
+    val priceList = zip1.map(p => p._1 * p._2)
+
+    PlUtils.pri(priceList)
+
+    val allPrice = priceList.sum
+
+    PlUtils.pri(allPrice)
+
   }
 
 }
