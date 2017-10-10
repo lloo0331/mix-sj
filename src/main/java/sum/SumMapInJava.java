@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 //统计字符串里的字符出现次数
-public class FreqInJava {
+public class SumMapInJava {
 
     public static void main(String args[]){
 

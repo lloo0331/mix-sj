@@ -105,6 +105,51 @@ object ListInScala {
 
     PlUtils.pri(List((1,2),(1,3),(2,3),(3,3),(3,4)).groupBy(_._1),"List((1,2),(1,3),(2,3),(3,3),(3,4)).groupBy(_._1)");
 
+
+    val names = List("Peter","Paul","Mary")
+
+    val names1 = names.map(_.toUpperCase)
+
+    val names2 = for(i<- names)yield i.toUpperCase()
+
+    def ulcase(s:String) = Vector(s.toUpperCase(),s.toLowerCase())
+
+    val names3 = names.map(ulcase)
+
+    val names4 = names.flatMap(ulcase)//FlatMap会对结果进行合并,合并到一个集合
+
+
+    PlUtils.pri(names1)
+
+    PlUtils.pri(names2)
+
+    PlUtils.pri(names3)
+
+    PlUtils.pri(names4)
+
+    names.foreach(println)
+
+    val aa1 = "-3+4".collect{
+      case '+' => 1
+      case '-' => -1
+    }
+
+    PlUtils.pri(aa1)
+
+    val list1 = List(1,7,2,9)
+
+    val reduce1 = list1.reduceLeft(_-_)
+
+    val reduce2 = (0 /: list1)(_-_)
+
+    val reduce3 = list1.foldLeft(0)(_-_)
+
+    PlUtils.pri(reduce1)
+
+    PlUtils.pri(reduce2)
+
+    PlUtils.pri(reduce3)
+
   }
 
 }
