@@ -1,8 +1,8 @@
 package gennerics
 
-/**
+/** 类型变量界定 >:
   * Created by li on 2017/10/16.
-  * 给泛型指定上界 类似于 T extends X
+  * 给泛型指定下界 类似于 T extends X
   */
 class Pair1[T](val first:T, val second:T) {
 

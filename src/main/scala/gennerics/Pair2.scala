@@ -2,7 +2,7 @@ package gennerics
 
 /**
   * Created by li on 2017/10/16.
-  *
+  * 视图界定
   * T <% Comparable[T]
   * T <% Ordered[T]
   * <% 关系意味着T可以被隐式转换成Comparable[T],
