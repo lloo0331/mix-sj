@@ -9,6 +9,16 @@ object TupleInScala {
 
   def main(args: Array[String]): Unit = {
 
+    val pair = (1,2,3,4,"Fred")
+
+    val pair1 = new Tuple3(1,2,3)
+
+    PlUtils.pri(pair)
+
+    PlUtils.pri(pair._1)
+
+    PlUtils.pri(pair._3)
+
     val longest = longestWord("The quick brown fox".split(" "))
 
     PlUtils.pri(longest)
