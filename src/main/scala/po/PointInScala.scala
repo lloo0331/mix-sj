@@ -1,7 +1,7 @@
 package po
 
 //Point实体类,自己写get,set方法.
-class PointInScala(xc:Int, xy:Int) {
+class PointInScala(xc:Int, xy:Int) extends Serializable{
 
   private var mx = xc
 
@@ -27,6 +27,10 @@ class PointInScala(xc:Int, xy:Int) {
     println("执行point.y调用了该方法")
   }
 
+  def getX() = this.mx
+
+  def getY() = this.my
+
   override def toString: String = "x:"+x+";y:"+y
 
 }
@@ -49,6 +53,10 @@ object PointInScala{
     println(point.x)
 
     println(point)
+
+    println(point.getX())
+
+    println(point.getY())
 
   }
 }

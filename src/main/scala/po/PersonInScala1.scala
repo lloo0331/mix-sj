@@ -3,7 +3,7 @@ package po
 import utils.PlUtils
 
 //上界,排序
-class PersonInScala1 (val firstName:String,val lastName:String)extends Ordered[PersonInScala1]{
+class PersonInScala1 (val firstName:String,val lastName:String)extends Ordered[PersonInScala1] with Serializable{
 
   override def compare(that: PersonInScala1) ={
     val lastNameComparison = lastName.compareToIgnoreCase(that.lastName)
