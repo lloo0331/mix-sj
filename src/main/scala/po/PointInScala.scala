@@ -47,7 +47,7 @@ object PointInScala{
 
     println(point)
 
-    point.x = 20
+    point.x = 20//调用了point.x_=(20) 方法名是x_=...转换到java的话是x_$eq,因为java不允许方法名出现=号
     point.y = 20
 
     println(point.x)

@@ -37,8 +37,6 @@ object Person{
 
     PlUtils.pri(p.id)
 
-
-
   }
 
 
