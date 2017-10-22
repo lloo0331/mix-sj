@@ -2,7 +2,7 @@ package implicits
 
 object Demo2 extends App{
 
-  def foo(msg:String) = println(msg)
+  def foo(msg:Int) = println(msg)
 
   implicit def intToString(x:Int) = x.toString
 
