@@ -16,6 +16,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.5-jre</version>
+        </dependency>
+
+
+
+    </dependencies>
+
     <build>
         <defaultGoal>package</defaultGoal>
         <resources>
